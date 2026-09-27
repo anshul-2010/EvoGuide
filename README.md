@@ -22,7 +22,7 @@ isolate evolutionary information, biological evidence, and adaptive control:
 | `biology_only` / `evolution_fixed_retrieval` / `fixed_closed_loop` | 0.584 (identical) |
 | `static_chemistry` (naive baseline) | 0.587 |
 | `generic_react` | 0.587 |
-| **`full_agent` (EvoGuide)** | **0.609** |
+| **`full_agent` (EvoGuide)** | **0.659** |
 
 The sharper finding: three conditions with *real* biological/evolutionary evidence but no
 adaptive control are statistically indistinguishable from doing nothing. Only the
