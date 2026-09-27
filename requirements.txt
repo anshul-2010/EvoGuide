@@ -1,0 +1,16 @@
+numpy
+pandas
+pyarrow
+scikit-learn
+scipy
+joblib
+PyYAML
+xgboost
+lightgbm
+rdkit
+faiss-cpu
+fair-esm
+torch
+biopython
+requests
+tqdm
