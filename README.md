@@ -1,20 +1,12 @@
 # EvoGuide (EvoDesign-Agent)
 
-**Evolution-Aware Agentic Design for Closed-Loop Antimicrobial Discovery** — a real, end-to-end
-implementation and experimental pilot targeting the NeurIPS AgenticLS Workshop 2026.
+**Evolution-Aware Agentic Design for Closed-Loop Antimicrobial Discovery** — a real, end-to-end implementation and experimental pilot targeting the NeurIPS AgenticLS Workshop 2026.
 
-EvoGuide is a scientific-state orchestrator that adaptively links an evolutionary-risk model
-(AMR-MoEGA), a hybrid protein-retrieval system (ProteinRAG), and a bounded candidate-refinement
-loop through an evidence-gap-driven action policy. Unlike a fixed pipeline, it decides at each
-step whether to run further evolutionary analysis, retrieve additional biological evidence,
-build candidate requirements, or refine a candidate — and can recognize when it lacks sufficient
-evidence to proceed. Every result in this repository is from a real run (real AMR-MoEGA GA
-training, real ProteinRAG retrieval, real local LLM inference) — nothing is simulated.
+EvoGuide is a scientific-state orchestrator that adaptively links an evolutionary-risk model (AMR-MoEGA), a hybrid protein-retrieval system (ProteinRAG), and a bounded candidate-refinement loop through an evidence-gap-driven action policy. Unlike a fixed pipeline, it decides at each step whether to run further evolutionary analysis, retrieve additional biological evidence, build candidate requirements, or refine a candidate, and can recognize when it lacks sufficient evidence to proceed.
 
 ## Headline result
 
-Across a 12-genome pilot (8 CIP-resistant, 4 susceptible) and 7 execution conditions designed to
-isolate evolutionary information, biological evidence, and adaptive control:
+Across a 12-genome pilot (8 CIP-resistant, 4 susceptible) and 7 execution conditions designed to isolate evolutionary information, biological evidence, and adaptive control:
 
 | Condition | Mean best candidate score (n=8 resistant genomes) |
 |---|---|
@@ -24,13 +16,7 @@ isolate evolutionary information, biological evidence, and adaptive control:
 | `generic_react` | 0.587 |
 | **`full_agent` (EvoGuide)** | **0.659** |
 
-The sharper finding: three conditions with *real* biological/evolutionary evidence but no
-adaptive control are statistically indistinguishable from doing nothing. Only the
-evidence-gap-driven policy produces a gain — the contribution is the adaptive policy, not access
-to evidence alone. See [`docs/results.md`](docs/results.md) for the full account, including the
-central open caveat (run-to-run LLM variance) and a fault-injection result showing the agent
-never recovers a scored candidate under complete tool outage (0/7), while it reliably escalates
-to human review under corrupted-but-present evidence (6/7).
+The sharper finding: three conditions with *real* biological/evolutionary evidence but no adaptive control are statistically indistinguishable from doing nothing. Only the evidence-gap-driven policy produces a gain — the contribution is the adaptive policy, not access to evidence alone. See [`docs/results.md`](docs/results.md) for the full account, including the central open caveat (run-to-run LLM variance) and a fault-injection result showing the agent never recovers a scored candidate under complete tool outage (0/7), while it reliably escalates to human review under corrupted-but-present evidence (6/7).
 
 ## Repository structure
 
@@ -58,30 +44,15 @@ run.py             Single-genome, single-condition CLI entry point.
 
 Start here, in order:
 
-- [`docs/overview.md`](docs/overview.md) — core framing, the four engines, the 6-layer
-  architecture (Scientific Agent, Evolutionary Risk Profile, Risk-to-Biology Translator,
-  Evidence Graph, Candidate Requirement Specification, finite action space, stopping criteria).
-- [`docs/design-principles.md`](docs/design-principles.md) — standing scoping rules: what each
-  component may and may not claim, why the LLM is constrained to a fixed property ontology, why
-  candidates come from an existing pool rather than a generator, why "removing the agent" is a
-  central ablation rather than an appendix afterthought.
-- [`docs/experiments.md`](docs/experiments.md) — the 4 research questions, 7 execution
-  conditions, key standalone experiments, and 9 evaluation dimensions the experimental design is
-  built around.
-- [`docs/results.md`](docs/results.md) — the living results document. Real numbers, updated as
-  experiments complete, with every methodology caveat and every bug found along the way
-  disclosed rather than smoothed over.
-- [`references/amr-moega.md`](references/amr-moega.md) and
-  [`references/proteinrag.md`](references/proteinrag.md) — ground-truth extraction from the two
-  source papers (`AMR-MoEGA.pdf`, `ProteinRAG.pdf`), including a code-reality-check section
-  documenting real gaps between what each paper describes and what its released code does.
+- [`docs/overview.md`](docs/overview.md) — core framing, the four engines, the 6-layer architecture (Scientific Agent, Evolutionary Risk Profile, Risk-to-Biology Translator, Evidence Graph, Candidate Requirement Specification, finite action space, stopping criteria).
+- [`docs/design-principles.md`](docs/design-principles.md) — standing scoping rules: what each component may and may not claim, why the LLM is constrained to a fixed property ontology, why candidates come from an existing pool rather than a generator, why "removing the agent" is a central ablation rather than an appendix afterthought.
+- [`docs/experiments.md`](docs/experiments.md) — the 4 research questions, 7 execution conditions, key standalone experiments, and 9 evaluation dimensions the experimental design is built around.
+- [`docs/results.md`](docs/results.md) — the living results document. Real numbers, updated as experiments complete, with every methodology caveat and every bug found along the way disclosed rather than smoothed over.
+- [`references/amr-moega.md`](references/amr-moega.md) and [`references/proteinrag.md`](references/proteinrag.md) — ground-truth extraction from the two source papers (`AMR-MoEGA.pdf`, `ProteinRAG.pdf`), including a code-reality-check section documenting real gaps between what each paper describes and what its released code does.
 
 ## Setup
 
-Requires Python 3.11 (chosen over 3.13 for wheel availability of `rdkit`/`faiss`/`xgboost`), and
-local clones of the two external repos this project wraps (never copied into this repo):
-AMR-MoEGA and Evolution-Aware-Hybrid-Protein-Retrieval (ProteinRAG). Their paths are set in
-`configs/default.yaml: external.*`.
+Requires Python 3.11 (chosen over 3.13 for wheel availability of `rdkit`/`faiss`/`xgboost`), and local clones of the two external repos this project wraps (never copied into this repo): AMR-MoEGA and Evolution-Aware-Hybrid-Protein-Retrieval (ProteinRAG). Their paths are set in `configs/default.yaml: external.*`.
 
 ```bash
 python -m venv .venv
@@ -89,10 +60,7 @@ source .venv/Scripts/activate      # or .venv/bin/activate on Linux/macOS
 pip install -r requirements.txt
 ```
 
-An [Ollama](https://ollama.com) server running locally (`http://localhost:11434`) provides the
-LLM backend for the agentic conditions — pull the model set in `configs/default.yaml:
-agent.ollama.model` (default `qwen2.5:3b-instruct`; a 1.5B variant is also used for the backbone
-comparison and is known to fail the task, see `docs/results.md`).
+An [Ollama](https://ollama.com) server running locally (`http://localhost:11434`) provides the LLM backend for the agentic conditions — pull the model set in `configs/default.yaml: agent.ollama.model` (default `qwen2.5:3b-instruct`; a 1.5B variant is also used for the backbone comparison and is known to fail the task, see `docs/results.md`).
 
 One-time data preparation (run once, in order):
 
@@ -151,10 +119,3 @@ ProteinRAG repositories — rather than silently patching around them. Highlight
 - Fault-injection testing found a real, disclosed reliability gap: under total tool outage the
   agent never once recovers a scored candidate (0/7) and rarely escalates, versus reliable
   escalation under corrupted-but-present evidence (6/7) — an asymmetry documented, not hidden.
-
-## Paper
-
-The NeurIPS AgenticLS 2026 submission lives in [`paper/`](paper/main.tex), built on the real
-official `neurips_2026.sty`. See `paper/checklist.tex` for the completed NeurIPS paper checklist,
-including honestly-flagged open items (data/code release decision, final license verification,
-a not-yet-written broader-impacts paragraph) rather than a fully green checklist for its own sake.
