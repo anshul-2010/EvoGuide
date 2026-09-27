@@ -1,0 +1,331 @@
+{
+  "antibiotic": "CIP",
+  "genome_row": 4,
+  "true_label": 1,
+  "resistance_risk": 0.9988709921945989,
+  "held_out_val_auc": 0.9696013544712944,
+  "best_generation": 13,
+  "population_fitness_trajectory": [
+    {
+      "generation": 0,
+      "mean_auc": 0.9451500692627366,
+      "best_auc": 0.9623672464214252,
+      "std_auc": 0.0077174706570938955
+    },
+    {
+      "generation": 1,
+      "mean_auc": 0.951380637217177,
+      "best_auc": 0.9625211636139757,
+      "std_auc": 0.005525446281866922
+    },
+    {
+      "generation": 2,
+      "mean_auc": 0.9527735878097582,
+      "best_auc": 0.9629829151916268,
+      "std_auc": 0.006053870774769196
+    },
+    {
+      "generation": 3,
+      "mean_auc": 0.9540172387255655,
+      "best_auc": 0.9642142527320302,
+      "std_auc": 0.0051172837225139465
+    },
+    {
+      "generation": 4,
+      "mean_auc": 0.956449130367862,
+      "best_auc": 0.965676466061259,
+      "std_auc": 0.003656829238145548
+    },
+    {
+      "generation": 5,
+      "mean_auc": 0.958063721717716,
+      "best_auc": 0.9653686316761582,
+      "std_auc": 0.004494140597925326
+    },
+    {
+      "generation": 6,
+      "mean_auc": 0.9597583500076959,
+      "best_auc": 0.9676004309681392,
+      "std_auc": 0.003454000912752799
+    },
+    {
+      "generation": 7,
+      "mean_auc": 0.9608373095274743,
+      "best_auc": 0.9686008927197167,
+      "std_auc": 0.002625479028376287
+    },
+    {
+      "generation": 8,
+      "mean_auc": 0.9614422040941973,
+      "best_auc": 0.9665230106202862,
+      "std_auc": 0.0028651547929951122
+    },
+    {
+      "generation": 9,
+      "mean_auc": 0.9617685085424041,
+      "best_auc": 0.9671386793904878,
+      "std_auc": 0.0027926657541467188
+    },
+    {
+      "generation": 10,
+      "mean_auc": 0.962076342927505,
+      "best_auc": 0.9669078036016623,
+      "std_auc": 0.002889804615328253
+    },
+    {
+      "generation": 11,
+      "mean_auc": 0.9620409419732183,
+      "best_auc": 0.9691396028936432,
+      "std_auc": 0.0029980113879504696
+    },
+    {
+      "generation": 12,
+      "mean_auc": 0.9636278282284132,
+      "best_auc": 0.9691396028936432,
+      "std_auc": 0.0026897173626353747
+    },
+    {
+      "generation": 13,
+      "mean_auc": 0.9641388333076805,
+      "best_auc": 0.9696013544712944,
+      "std_auc": 0.002406208201086975
+    },
+    {
+      "generation": 14,
+      "mean_auc": 0.9642388794828382,
+      "best_auc": 0.9685239341234415,
+      "std_auc": 0.002786472576032247
+    },
+    {
+      "generation": 15,
+      "mean_auc": 0.9638663998768662,
+      "best_auc": 0.968293058334616,
+      "std_auc": 0.002421310683779277
+    },
+    {
+      "generation": 16,
+      "mean_auc": 0.9633046021240574,
+      "best_auc": 0.9688317685085424,
+      "std_auc": 0.0031506698931521833
+    },
+    {
+      "generation": 17,
+      "mean_auc": 0.9633353855625674,
+      "best_auc": 0.9691396028936431,
+      "std_auc": 0.0027931662130347796
+    },
+    {
+      "generation": 18,
+      "mean_auc": 0.9626042788979529,
+      "best_auc": 0.9670617207942127,
+      "std_auc": 0.003183513612403215
+    },
+    {
+      "generation": 19,
+      "mean_auc": 0.9635323995690321,
+      "best_auc": 0.9687548099122673,
+      "std_auc": 0.002908913187341188
+    },
+    {
+      "generation": 20,
+      "mean_auc": 0.9638079113436971,
+      "best_auc": 0.9685239341234416,
+      "std_auc": 0.0024582479060983133
+    },
+    {
+      "generation": 21,
+      "mean_auc": 0.9640403263044481,
+      "best_auc": 0.9695243958750193,
+      "std_auc": 0.0028921613875467714
+    },
+    {
+      "generation": 22,
+      "mean_auc": 0.9645790364783745,
+      "best_auc": 0.969447437278744,
+      "std_auc": 0.002742353897578322
+    },
+    {
+      "generation": 23,
+      "mean_auc": 0.9638756349084194,
+      "best_auc": 0.9681391411420656,
+      "std_auc": 0.0033487867965443278
+    },
+    {
+      "generation": 24,
+      "mean_auc": 0.9654132676619978,
+      "best_auc": 0.9689856857010928,
+      "std_auc": 0.002326344694037448
+    }
+  ],
+  "entropy_trajectory": [
+    {
+      "generation": 0,
+      "mean_feature_entropy_bits": 0.7071646588131286
+    },
+    {
+      "generation": 1,
+      "mean_feature_entropy_bits": 0.7114518106008721
+    },
+    {
+      "generation": 2,
+      "mean_feature_entropy_bits": 0.7108471739955223
+    },
+    {
+      "generation": 3,
+      "mean_feature_entropy_bits": 0.6959387725578767
+    },
+    {
+      "generation": 4,
+      "mean_feature_entropy_bits": 0.6551560993735498
+    },
+    {
+      "generation": 5,
+      "mean_feature_entropy_bits": 0.5766082990990629
+    },
+    {
+      "generation": 6,
+      "mean_feature_entropy_bits": 0.4370168739012074
+    },
+    {
+      "generation": 7,
+      "mean_feature_entropy_bits": 0.45623057645025594
+    },
+    {
+      "generation": 8,
+      "mean_feature_entropy_bits": 0.48555768107232455
+    },
+    {
+      "generation": 9,
+      "mean_feature_entropy_bits": 0.5105034186240599
+    },
+    {
+      "generation": 10,
+      "mean_feature_entropy_bits": 0.5199686359242915
+    },
+    {
+      "generation": 11,
+      "mean_feature_entropy_bits": 0.549456408800155
+    },
+    {
+      "generation": 12,
+      "mean_feature_entropy_bits": 0.5546271074056356
+    },
+    {
+      "generation": 13,
+      "mean_feature_entropy_bits": 0.5537702359702796
+    },
+    {
+      "generation": 14,
+      "mean_feature_entropy_bits": 0.5423041346131676
+    },
+    {
+      "generation": 15,
+      "mean_feature_entropy_bits": 0.5404617070289699
+    },
+    {
+      "generation": 16,
+      "mean_feature_entropy_bits": 0.5835986363774991
+    },
+    {
+      "generation": 17,
+      "mean_feature_entropy_bits": 0.5590379218800124
+    },
+    {
+      "generation": 18,
+      "mean_feature_entropy_bits": 0.5685872728512713
+    },
+    {
+      "generation": 19,
+      "mean_feature_entropy_bits": 0.5603890995041915
+    },
+    {
+      "generation": 20,
+      "mean_feature_entropy_bits": 0.5731299705132505
+    },
+    {
+      "generation": 21,
+      "mean_feature_entropy_bits": 0.5841305915660169
+    },
+    {
+      "generation": 22,
+      "mean_feature_entropy_bits": 0.5887516714138488
+    },
+    {
+      "generation": 23,
+      "mean_feature_entropy_bits": 0.5861658171944873
+    },
+    {
+      "generation": 24,
+      "mean_feature_entropy_bits": 0.5822005326920441
+    }
+  ],
+  "mechanism_clusters": [
+    {
+      "cluster_id": 0,
+      "first_appearance_generation": 0,
+      "n_members": 243,
+      "representative_features": [
+        "X4488025.1",
+        "X4114164.2",
+        "X2313262.2",
+        "X411555.3",
+        "X2125832.1",
+        "X2121686.2",
+        "X4450846.1",
+        "X140680.3"
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "first_appearance_generation": 5,
+      "n_members": 681,
+      "representative_features": [
+        "X2565934.2",
+        "X2565934.1",
+        "X3181155.2",
+        "X3183014",
+        "X497732.1",
+        "X522590.2",
+        "X4421890.2",
+        "X2313262.2",
+        "X635082.1",
+        "X4230581.2"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "first_appearance_generation": 0,
+      "n_members": 326,
+      "representative_features": [
+        "X348243",
+        "X2565934.2",
+        "X2125832.1",
+        "X4230581.2",
+        "X3183014",
+        "X1984821.1",
+        "X3538947",
+        "X3539574.1",
+        "X4390703",
+        "X2565934.1"
+      ]
+    }
+  ],
+  "cluster_transition_matrix": [
+    [
+      0.8600508905852418,
+      0.010178117048346057,
+      0.1297709923664122
+    ],
+    [
+      0.0014803849000740192,
+      0.9570688378978535,
+      0.04145077720207254
+    ],
+    [
+      0.07098765432098765,
+      0.10030864197530864,
+      0.8287037037037037
+    ]
+  ],
+  "notes": "mechanism_clusters are feature-column clusters (X### SNP codes) from the Giessen tabular dataset, NOT gene-symbol clusters \u2014 this dataset has no gene annotation. cluster_transition_matrix is a GA-generation-indexed transition likelihood between these clusters, not a real-time/calendar prediction."
+}

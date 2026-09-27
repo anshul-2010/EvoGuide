@@ -1,0 +1,400 @@
+{
+  "question": "[fixed_closed_loop] candidate-property refinements for Giessen-dataset genome row 9 (CIP)?",
+  "antibiotic": "CIP",
+  "genome_row": 9,
+  "status": "stopped",
+  "stopping_reason": "risk_below_threshold",
+  "risk_profile": {
+    "antibiotic": "CIP",
+    "genome_row": 9,
+    "true_label": 0,
+    "resistance_risk": 0.1862361280967349,
+    "held_out_val_auc": 0.9702939818377712,
+    "best_generation": 22,
+    "population_fitness_trajectory": [
+      {
+        "generation": 0,
+        "mean_auc": 0.949419732184085,
+        "best_auc": 0.9604432815145452,
+        "std_auc": 0.005498239250561834
+      },
+      {
+        "generation": 1,
+        "mean_auc": 0.9523287671232876,
+        "best_auc": 0.9602124057257196,
+        "std_auc": 0.004303084288634281
+      },
+      {
+        "generation": 2,
+        "mean_auc": 0.954223487763583,
+        "best_auc": 0.9632907495767278,
+        "std_auc": 0.0045532100662011655
+      },
+      {
+        "generation": 3,
+        "mean_auc": 0.9559827612744343,
+        "best_auc": 0.9628289979990765,
+        "std_auc": 0.0041730286301990506
+      },
+      {
+        "generation": 4,
+        "mean_auc": 0.9564814529782977,
+        "best_auc": 0.9638294597506541,
+        "std_auc": 0.003760189138579037
+      },
+      {
+        "generation": 5,
+        "mean_auc": 0.9582638140680312,
+        "best_auc": 0.9635216253655533,
+        "std_auc": 0.003166299250446527
+      },
+      {
+        "generation": 6,
+        "mean_auc": 0.9587625057718947,
+        "best_auc": 0.964906880098507,
+        "std_auc": 0.003046563674547284
+      },
+      {
+        "generation": 7,
+        "mean_auc": 0.9591796213637064,
+        "best_auc": 0.9653686316761583,
+        "std_auc": 0.003796488224290618
+      },
+      {
+        "generation": 8,
+        "mean_auc": 0.960266276743112,
+        "best_auc": 0.9662921348314607,
+        "std_auc": 0.0031462138746204695
+      },
+      {
+        "generation": 9,
+        "mean_auc": 0.9606941665384022,
+        "best_auc": 0.9673695551793134,
+        "std_auc": 0.0031310256606982816
+      },
+      {
+        "generation": 10,
+        "mean_auc": 0.961179005694936,
+        "best_auc": 0.9675234723718639,
+        "std_auc": 0.0035629805491545884
+      },
+      {
+        "generation": 11,
+        "mean_auc": 0.961533015237802,
+        "best_auc": 0.9673695551793134,
+        "std_auc": 0.003448169733521407
+      },
+      {
+        "generation": 12,
+        "mean_auc": 0.9626273664768352,
+        "best_auc": 0.9679852239495151,
+        "std_auc": 0.0033438980331602242
+      },
+      {
+        "generation": 13,
+        "mean_auc": 0.9626889333538557,
+        "best_auc": 0.9678313067569647,
+        "std_auc": 0.0034757586419745645
+      },
+      {
+        "generation": 14,
+        "mean_auc": 0.9633061412959827,
+        "best_auc": 0.9675234723718639,
+        "std_auc": 0.002206605744005719
+      },
+      {
+        "generation": 15,
+        "mean_auc": 0.9631922425734953,
+        "best_auc": 0.9686008927197167,
+        "std_auc": 0.0032681241517401273
+      },
+      {
+        "generation": 16,
+        "mean_auc": 0.9640372479605971,
+        "best_auc": 0.9687548099122673,
+        "std_auc": 0.0026998870044254793
+      },
+      {
+        "generation": 17,
+        "mean_auc": 0.9635708788671694,
+        "best_auc": 0.9693704786824687,
+        "std_auc": 0.0032038358134907395
+      },
+      {
+        "generation": 18,
+        "mean_auc": 0.9633061412959827,
+        "best_auc": 0.9690626442973679,
+        "std_auc": 0.003211857588172904
+      },
+      {
+        "generation": 19,
+        "mean_auc": 0.9635908881022011,
+        "best_auc": 0.9698322302601201,
+        "std_auc": 0.0033902772984644946
+      },
+      {
+        "generation": 20,
+        "mean_auc": 0.96471756195167,
+        "best_auc": 0.9695243958750193,
+        "std_auc": 0.002291206696102499
+      },
+      {
+        "generation": 21,
+        "mean_auc": 0.9645036170540249,
+        "best_auc": 0.9699861474526703,
+        "std_auc": 0.0024952421806639855
+      },
+      {
+        "generation": 22,
+        "mean_auc": 0.9640326304448206,
+        "best_auc": 0.9702939818377712,
+        "std_auc": 0.0027769476951758566
+      },
+      {
+        "generation": 23,
+        "mean_auc": 0.9635831922425736,
+        "best_auc": 0.96983223026012,
+        "std_auc": 0.003377807387423029
+      },
+      {
+        "generation": 24,
+        "mean_auc": 0.9646298291519164,
+        "best_auc": 0.9699861474526704,
+        "std_auc": 0.002766958543940844
+      }
+    ],
+    "entropy_trajectory": [
+      {
+        "generation": 0,
+        "mean_feature_entropy_bits": 0.7071646588131286
+      },
+      {
+        "generation": 1,
+        "mean_feature_entropy_bits": 0.6911404847407613
+      },
+      {
+        "generation": 2,
+        "mean_feature_entropy_bits": 0.6751941986659543
+      },
+      {
+        "generation": 3,
+        "mean_feature_entropy_bits": 0.636839130560335
+      },
+      {
+        "generation": 4,
+        "mean_feature_entropy_bits": 0.6189669348419968
+      },
+      {
+        "generation": 5,
+        "mean_feature_entropy_bits": 0.5888823497504453
+      },
+      {
+        "generation": 6,
+        "mean_feature_entropy_bits": 0.5814610578122921
+      },
+      {
+        "generation": 7,
+        "mean_feature_entropy_bits": 0.5820399295839985
+      },
+      {
+        "generation": 8,
+        "mean_feature_entropy_bits": 0.5642498235434119
+      },
+      {
+        "generation": 9,
+        "mean_feature_entropy_bits": 0.5313343758068855
+      },
+      {
+        "generation": 10,
+        "mean_feature_entropy_bits": 0.48951788653915845
+      },
+      {
+        "generation": 11,
+        "mean_feature_entropy_bits": 0.5141883727608317
+      },
+      {
+        "generation": 12,
+        "mean_feature_entropy_bits": 0.46276345322289897
+      },
+      {
+        "generation": 13,
+        "mean_feature_entropy_bits": 0.47323020801822613
+      },
+      {
+        "generation": 14,
+        "mean_feature_entropy_bits": 0.47437916741697284
+      },
+      {
+        "generation": 15,
+        "mean_feature_entropy_bits": 0.4965866502215033
+      },
+      {
+        "generation": 16,
+        "mean_feature_entropy_bits": 0.5013125464511333
+      },
+      {
+        "generation": 17,
+        "mean_feature_entropy_bits": 0.5140780288002695
+      },
+      {
+        "generation": 18,
+        "mean_feature_entropy_bits": 0.5330168697099257
+      },
+      {
+        "generation": 19,
+        "mean_feature_entropy_bits": 0.531670611629537
+      },
+      {
+        "generation": 20,
+        "mean_feature_entropy_bits": 0.507505888635298
+      },
+      {
+        "generation": 21,
+        "mean_feature_entropy_bits": 0.5001067562731643
+      },
+      {
+        "generation": 22,
+        "mean_feature_entropy_bits": 0.5044391164509411
+      },
+      {
+        "generation": 23,
+        "mean_feature_entropy_bits": 0.5192951461749836
+      },
+      {
+        "generation": 24,
+        "mean_feature_entropy_bits": 0.5199124407017466
+      }
+    ],
+    "mechanism_clusters": [
+      {
+        "cluster_id": 0,
+        "first_appearance_generation": 7,
+        "n_members": 345,
+        "representative_features": [
+          "X4469454.2",
+          "X4625179",
+          "X4626838.1",
+          "X669854.3",
+          "X2125832.1",
+          "X4422821.1",
+          "X2957424.2",
+          "X2227335.1",
+          "X2008324.2",
+          "X4272090"
+        ]
+      },
+      {
+        "cluster_id": 1,
+        "first_appearance_generation": 0,
+        "n_members": 354,
+        "representative_features": [
+          "X4614902.1",
+          "X4630837.3",
+          "X4271379.2",
+          "X4172893.3",
+          "X2459954",
+          "X4422821.3",
+          "X4368957.3",
+          "X4095950.1",
+          "X3558954",
+          "X2127769.2"
+        ]
+      },
+      {
+        "cluster_id": 2,
+        "first_appearance_generation": 1,
+        "n_members": 551,
+        "representative_features": [
+          "X1276065.2",
+          "X2008324.2",
+          "X3538947.3",
+          "X4626838.1",
+          "X4614902.1",
+          "X4459543.1",
+          "X2115509",
+          "X669854.3",
+          "X2732353.2",
+          "X2957424.2"
+        ]
+      }
+    ],
+    "cluster_transition_matrix": [
+      [
+        0.7349397590361446,
+        0.004518072289156626,
+        0.2605421686746988
+      ],
+      [
+        0.006600660066006601,
+        0.8696369636963697,
+        0.12376237623762376
+      ],
+      [
+        0.17647058823529413,
+        0.062388591800356503,
+        0.7611408199643493
+      ]
+    ],
+    "notes": "mechanism_clusters are feature-column clusters (X### SNP codes) from the Giessen tabular dataset, NOT gene-symbol clusters \u2014 this dataset has no gene annotation. cluster_transition_matrix is a GA-generation-indexed transition likelihood between these clusters, not a real-time/calendar prediction."
+  },
+  "biological_evidence": {
+    "nodes": [],
+    "edges": [],
+    "evidence": []
+  },
+  "rbt_records": [],
+  "hypotheses": [],
+  "requirements": [],
+  "candidates": [],
+  "evaluations": {},
+  "best_candidate_id": null,
+  "uncertainty_flags": [],
+  "refinement_deltas": [],
+  "budget_used": 3,
+  "budget_max": 20,
+  "trajectory": [
+    {
+      "iteration": 0,
+      "action": "RUN_AMR_ANALYSIS",
+      "action_args": {},
+      "observation": {
+        "resistance_risk": 0.1862361280967349,
+        "n_mechanism_clusters": 3,
+        "held_out_val_auc": 0.9702939818377712
+      },
+      "rationale": "deterministic: always start with AMR analysis",
+      "hypothesis_update": null,
+      "confidence": null
+    },
+    {
+      "iteration": 1,
+      "action": "RETRIEVE_PROTEIN_EVIDENCE",
+      "action_args": {},
+      "observation": {
+        "n_records": 0,
+        "n_evidence_gaps": 0,
+        "risk_below_threshold": true,
+        "note": "resistance_risk is below the retrieval threshold for this genome \u2014 no further evidence retrieval will change this; recommend STOP."
+      },
+      "rationale": "deterministic: retrieve biological evidence next",
+      "hypothesis_update": null,
+      "confidence": null
+    },
+    {
+      "iteration": 2,
+      "action": "STOP",
+      "action_args": {
+        "reason": "risk_below_threshold"
+      },
+      "observation": {
+        "stopped": true,
+        "reason": "risk_below_threshold"
+      },
+      "rationale": "deterministic: resistance_risk below retrieval threshold \u2014 no further evidence retrieval possible",
+      "hypothesis_update": null,
+      "confidence": null
+    }
+  ],
+  "condition": "fixed_closed_loop",
+  "wall_clock_seconds": 0.0
+}

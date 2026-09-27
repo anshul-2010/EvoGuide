@@ -1,0 +1,786 @@
+{
+  "question": "[no_protein_rag] candidate-property refinements for Giessen-dataset genome row 5 (CIP)?",
+  "antibiotic": "CIP",
+  "genome_row": 5,
+  "status": "stopped",
+  "stopping_reason": "deterministic_sequence_complete",
+  "risk_profile": {
+    "antibiotic": "CIP",
+    "genome_row": 5,
+    "true_label": 1,
+    "resistance_risk": 0.9999559678959451,
+    "held_out_val_auc": 0.9722949053409266,
+    "best_generation": 24,
+    "population_fitness_trajectory": [
+      {
+        "generation": 0,
+        "mean_auc": 0.9451962444205018,
+        "best_auc": 0.9628289979990764,
+        "std_auc": 0.008451170187554976
+      },
+      {
+        "generation": 1,
+        "mean_auc": 0.9506233646298292,
+        "best_auc": 0.9633677081730029,
+        "std_auc": 0.005350764672321715
+      },
+      {
+        "generation": 2,
+        "mean_auc": 0.9535293212251809,
+        "best_auc": 0.9629059565953516,
+        "std_auc": 0.004460528737946356
+      },
+      {
+        "generation": 3,
+        "mean_auc": 0.9566122825919655,
+        "best_auc": 0.9640603355394798,
+        "std_auc": 0.0040680546933565195
+      },
+      {
+        "generation": 4,
+        "mean_auc": 0.9569478220717254,
+        "best_auc": 0.9644451285208558,
+        "std_auc": 0.003820530122757082
+      },
+      {
+        "generation": 5,
+        "mean_auc": 0.9589718331537632,
+        "best_auc": 0.96598430044636,
+        "std_auc": 0.004063578291551336
+      },
+      {
+        "generation": 6,
+        "mean_auc": 0.9589487455748809,
+        "best_auc": 0.966753886409112,
+        "std_auc": 0.0040420802865492765
+      },
+      {
+        "generation": 7,
+        "mean_auc": 0.9595213175311682,
+        "best_auc": 0.965214714483608,
+        "std_auc": 0.002562177634887339
+      },
+      {
+        "generation": 8,
+        "mean_auc": 0.959385870401724,
+        "best_auc": 0.965291673079883,
+        "std_auc": 0.003248995066425467
+      },
+      {
+        "generation": 9,
+        "mean_auc": 0.9610604894566722,
+        "best_auc": 0.9672925965830383,
+        "std_auc": 0.002979420622165754
+      },
+      {
+        "generation": 10,
+        "mean_auc": 0.9613375404032631,
+        "best_auc": 0.9680621825457902,
+        "std_auc": 0.0034610802300677713
+      },
+      {
+        "generation": 11,
+        "mean_auc": 0.9623472371863937,
+        "best_auc": 0.9672925965830383,
+        "std_auc": 0.002748911505096187
+      },
+      {
+        "generation": 12,
+        "mean_auc": 0.9626519932276433,
+        "best_auc": 0.9691396028936432,
+        "std_auc": 0.002839605349748054
+      },
+      {
+        "generation": 13,
+        "mean_auc": 0.963218408496229,
+        "best_auc": 0.9689856857010928,
+        "std_auc": 0.00316281704643446
+      },
+      {
+        "generation": 14,
+        "mean_auc": 0.9640726489148839,
+        "best_auc": 0.9691396028936432,
+        "std_auc": 0.00273034349511429
+      },
+      {
+        "generation": 15,
+        "mean_auc": 0.9637278744035709,
+        "best_auc": 0.9685239341234415,
+        "std_auc": 0.0024474982553666473
+      },
+      {
+        "generation": 16,
+        "mean_auc": 0.9635893489302755,
+        "best_auc": 0.9696013544712945,
+        "std_auc": 0.002439703543987525
+      },
+      {
+        "generation": 17,
+        "mean_auc": 0.9641803909496691,
+        "best_auc": 0.9692935200861936,
+        "std_auc": 0.0025687649702049896
+      },
+      {
+        "generation": 18,
+        "mean_auc": 0.9639987686624595,
+        "best_auc": 0.9704478990303218,
+        "std_auc": 0.0030831500113914223
+      },
+      {
+        "generation": 19,
+        "mean_auc": 0.9647267969832231,
+        "best_auc": 0.9700631060489456,
+        "std_auc": 0.0030767122811814836
+      },
+      {
+        "generation": 20,
+        "mean_auc": 0.9644312759735262,
+        "best_auc": 0.9696013544712945,
+        "std_auc": 0.002703501486341088
+      },
+      {
+        "generation": 21,
+        "mean_auc": 0.9656718485454826,
+        "best_auc": 0.9713714021856241,
+        "std_auc": 0.002932977219707024
+      },
+      {
+        "generation": 22,
+        "mean_auc": 0.965322456518393,
+        "best_auc": 0.9706018162228721,
+        "std_auc": 0.0026967153073420803
+      },
+      {
+        "generation": 23,
+        "mean_auc": 0.9655887332615053,
+        "best_auc": 0.9719870709558258,
+        "std_auc": 0.002978288130582845
+      },
+      {
+        "generation": 24,
+        "mean_auc": 0.965614899184239,
+        "best_auc": 0.9722949053409266,
+        "std_auc": 0.002765845269230531
+      }
+    ],
+    "entropy_trajectory": [
+      {
+        "generation": 0,
+        "mean_feature_entropy_bits": 0.7071646588131286
+      },
+      {
+        "generation": 1,
+        "mean_feature_entropy_bits": 0.7149658627457286
+      },
+      {
+        "generation": 2,
+        "mean_feature_entropy_bits": 0.7151136216263695
+      },
+      {
+        "generation": 3,
+        "mean_feature_entropy_bits": 0.621890327224412
+      },
+      {
+        "generation": 4,
+        "mean_feature_entropy_bits": 0.62478369801339
+      },
+      {
+        "generation": 5,
+        "mean_feature_entropy_bits": 0.6000676461523761
+      },
+      {
+        "generation": 6,
+        "mean_feature_entropy_bits": 0.5716616909742144
+      },
+      {
+        "generation": 7,
+        "mean_feature_entropy_bits": 0.5737071792055924
+      },
+      {
+        "generation": 8,
+        "mean_feature_entropy_bits": 0.569535617632201
+      },
+      {
+        "generation": 9,
+        "mean_feature_entropy_bits": 0.549909049025351
+      },
+      {
+        "generation": 10,
+        "mean_feature_entropy_bits": 0.5397031826433369
+      },
+      {
+        "generation": 11,
+        "mean_feature_entropy_bits": 0.5339594161954476
+      },
+      {
+        "generation": 12,
+        "mean_feature_entropy_bits": 0.5402364811080785
+      },
+      {
+        "generation": 13,
+        "mean_feature_entropy_bits": 0.5767752943015335
+      },
+      {
+        "generation": 14,
+        "mean_feature_entropy_bits": 0.5812943869122758
+      },
+      {
+        "generation": 15,
+        "mean_feature_entropy_bits": 0.5800974576170387
+      },
+      {
+        "generation": 16,
+        "mean_feature_entropy_bits": 0.5947406267241575
+      },
+      {
+        "generation": 17,
+        "mean_feature_entropy_bits": 0.6070868658574153
+      },
+      {
+        "generation": 18,
+        "mean_feature_entropy_bits": 0.6058999199464652
+      },
+      {
+        "generation": 19,
+        "mean_feature_entropy_bits": 0.5910654466220042
+      },
+      {
+        "generation": 20,
+        "mean_feature_entropy_bits": 0.6100529708183585
+      },
+      {
+        "generation": 21,
+        "mean_feature_entropy_bits": 0.603412704298311
+      },
+      {
+        "generation": 22,
+        "mean_feature_entropy_bits": 0.6005517810999117
+      },
+      {
+        "generation": 23,
+        "mean_feature_entropy_bits": 0.5951157063605165
+      },
+      {
+        "generation": 24,
+        "mean_feature_entropy_bits": 0.6004719887264671
+      }
+    ],
+    "mechanism_clusters": [
+      {
+        "cluster_id": 0,
+        "first_appearance_generation": 0,
+        "n_members": 316,
+        "representative_features": [
+          "X2125486.2",
+          "X1278140.2",
+          "X3436868.2",
+          "X3183014",
+          "X1984821.1",
+          "X2122650.2",
+          "X4272090.1",
+          "X3475285.2",
+          "X2008324.2",
+          "X2133329.2"
+        ]
+      },
+      {
+        "cluster_id": 1,
+        "first_appearance_generation": 6,
+        "n_members": 695,
+        "representative_features": [
+          "X2313262.2",
+          "X2125528",
+          "X3576303",
+          "X3436868.2",
+          "X2565934.2",
+          "X3183014",
+          "X1749908",
+          "X3181155.2",
+          "X165917",
+          "X2122650.2"
+        ]
+      },
+      {
+        "cluster_id": 2,
+        "first_appearance_generation": 0,
+        "n_members": 239,
+        "representative_features": [
+          "X4488025.1",
+          "X4477553",
+          "X2121686.2",
+          "X4368957.3",
+          "X411555.3",
+          "X4114164.2",
+          "X2313262.2",
+          "X140680.3",
+          "X3183014",
+          "X2119310.2"
+        ]
+      }
+    ],
+    "cluster_transition_matrix": [
+      [
+        0.7186009538950715,
+        0.17965023847376788,
+        0.10174880763116058
+      ],
+      [
+        0.07293946024799416,
+        0.9212253829321663,
+        0.005835156819839533
+      ],
+      [
+        0.1836734693877551,
+        0.03571428571428571,
+        0.7806122448979592
+      ]
+    ],
+    "notes": "mechanism_clusters are feature-column clusters (X### SNP codes) from the Giessen tabular dataset, NOT gene-symbol clusters \u2014 this dataset has no gene annotation. cluster_transition_matrix is a GA-generation-indexed transition likelihood between these clusters, not a real-time/calendar prediction."
+  },
+  "biological_evidence": {
+    "nodes": [],
+    "edges": [],
+    "evidence": []
+  },
+  "rbt_records": [
+    {
+      "cluster_id": 0,
+      "mechanism_hint": "efflux_regulator",
+      "gene": "acrR",
+      "heuristic_mapping": true,
+      "evidence_gap": false,
+      "evidence_ids": [],
+      "top_hits": []
+    },
+    {
+      "cluster_id": 2,
+      "mechanism_hint": "porin_permeability",
+      "gene": "ompF",
+      "heuristic_mapping": true,
+      "evidence_gap": false,
+      "evidence_ids": [],
+      "top_hits": []
+    },
+    {
+      "cluster_id": 1,
+      "mechanism_hint": "beta_lactamase",
+      "gene": null,
+      "heuristic_mapping": true,
+      "evidence_gap": false,
+      "evidence_ids": [],
+      "top_hits": []
+    }
+  ],
+  "hypotheses": [],
+  "requirements": [
+    {
+      "requirement_id": "R17",
+      "property_name": "target_interaction",
+      "weight": 0.8,
+      "rationale": "mechanism hint 'efflux_regulator' (cluster 0)",
+      "evidence_ids": []
+    },
+    {
+      "requirement_id": "R18",
+      "property_name": "permeability",
+      "weight": 0.5,
+      "rationale": "mechanism hint 'efflux_regulator' (cluster 0)",
+      "evidence_ids": []
+    },
+    {
+      "requirement_id": "R19",
+      "property_name": "selectivity",
+      "weight": 0.6,
+      "rationale": "mechanism hint 'efflux_regulator' (cluster 0)",
+      "evidence_ids": []
+    },
+    {
+      "requirement_id": "R20",
+      "property_name": "permeability",
+      "weight": 0.9,
+      "rationale": "mechanism hint 'porin_permeability' (cluster 2)",
+      "evidence_ids": []
+    },
+    {
+      "requirement_id": "R21",
+      "property_name": "physicochemical",
+      "weight": 0.6,
+      "rationale": "mechanism hint 'porin_permeability' (cluster 2)",
+      "evidence_ids": []
+    },
+    {
+      "requirement_id": "R22",
+      "property_name": "target_interaction",
+      "weight": 0.9,
+      "rationale": "mechanism hint 'beta_lactamase' (cluster 1)",
+      "evidence_ids": []
+    },
+    {
+      "requirement_id": "R23",
+      "property_name": "selectivity",
+      "weight": 0.7,
+      "rationale": "mechanism hint 'beta_lactamase' (cluster 1)",
+      "evidence_ids": []
+    },
+    {
+      "requirement_id": "R24",
+      "property_name": "stability",
+      "weight": 0.5,
+      "rationale": "mechanism hint 'beta_lactamase' (cluster 1)",
+      "evidence_ids": []
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "C1",
+      "name": "aspirin",
+      "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C2",
+      "name": "ibuprofen",
+      "smiles": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C3",
+      "name": "paracetamol",
+      "smiles": "CC(=O)Nc1ccc(O)cc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C4",
+      "name": "ciprofloxacin",
+      "smiles": "O=C(O)c1cn(C2CC2)c2cc(N3CCNCC3)c(F)cc2c1=O",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C5",
+      "name": "amoxicillin",
+      "smiles": "CC1(C)SC2C(NC(=O)C(N)c3ccc(O)cc3)C(=O)N2C1C(=O)O",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C6",
+      "name": "sulfamethoxazole",
+      "smiles": "Cc1cc(NS(=O)(=O)c2ccc(N)cc2)no1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C7",
+      "name": "trimethoprim",
+      "smiles": "COc1cc(Cc2cnc(N)nc2N)cc(OC)c1OC",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C8",
+      "name": "penicillin_g",
+      "smiles": "CC1(C)SC2C(NC(=O)Cc3ccccc3)C(=O)N2C1C(=O)O",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C9",
+      "name": "tetracycline",
+      "smiles": "CN(C)C1C(=O)C(C(N)=O)=C(O)C2(O)C(O)=C3C(=O)c4c(O)ccc(N)c4CC3CC12",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C10",
+      "name": "metronidazole",
+      "smiles": "Cc1ncc([N+](=O)[O-])n1CCO",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C11",
+      "name": "doxycycline",
+      "smiles": "CC1c2cccc(O)c2C(O)=C2C(=O)C3(O)C(O)=C(C(N)=O)C(=O)C(N(C)C)C3C(O)C21",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C12",
+      "name": "caffeine",
+      "smiles": "Cn1c(=O)c2c(ncn2C)n(C)c1=O",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C13",
+      "name": "nicotine",
+      "smiles": "CN1CCCC1c1cccnc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C14",
+      "name": "benzocaine",
+      "smiles": "CCOC(=O)c1ccc(N)cc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C15",
+      "name": "sulfanilamide",
+      "smiles": "Nc1ccc(S(N)(=O)=O)cc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C16",
+      "name": "chloramphenicol",
+      "smiles": "O=C(NC(CO)C(O)c1ccc([N+](=O)[O-])cc1)C(Cl)Cl",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C17",
+      "name": "levofloxacin",
+      "smiles": "CC1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C18",
+      "name": "norfloxacin",
+      "smiles": "CCn1cc(C(=O)O)c(=O)c2cc(F)c(N3CCNCC3)cc21",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C19",
+      "name": "ampicillin",
+      "smiles": "CC1(C)SC2C(NC(=O)C(N)c3ccccc3)C(=O)N2C1C(=O)O",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C20",
+      "name": "cephalexin",
+      "smiles": "CC1=C(C(=O)O)N2C(=O)C(NC(=O)C(N)c3ccccc3)C2SC1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C21",
+      "name": "salicylic_acid",
+      "smiles": "O=C(O)c1ccccc1O",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C22",
+      "name": "benzoic_acid",
+      "smiles": "O=C(O)c1ccccc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C23",
+      "name": "phenol",
+      "smiles": "Oc1ccccc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C24",
+      "name": "acetanilide",
+      "smiles": "CC(=O)Nc1ccccc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C25",
+      "name": "sulfadiazine",
+      "smiles": "Nc1ccc(S(=O)(=O)Nc2ncccn2)cc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C26",
+      "name": "sulfacetamide",
+      "smiles": "CC(=O)NS(=O)(=O)c1ccc(N)cc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C27",
+      "name": "pyrimethamine",
+      "smiles": "CCc1nc(N)nc(N)c1Cl",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C28",
+      "name": "dapsone",
+      "smiles": "Nc1ccc(S(=O)(=O)c2ccc(N)cc2)cc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C29",
+      "name": "nitrofurantoin",
+      "smiles": "NCN1C(=O)NC(=O)C1=Nn1ccc([N+](=O)[O-])c1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C30",
+      "name": "isoniazid",
+      "smiles": "NNC(=O)c1ccncc1",
+      "parent_id": null,
+      "transform_applied": null
+    }
+  ],
+  "evaluations": {
+    "C1": {
+      "overall_score": 0.5686060606060607,
+      "per_requirement": {
+        "R17": {
+          "property": "target_interaction",
+          "score": 0.4,
+          "weight": 0.8
+        },
+        "R18": {
+          "property": "permeability",
+          "score": 0.5457142857142856,
+          "weight": 0.5
+        },
+        "R19": {
+          "property": "selectivity",
+          "score": 0.5,
+          "weight": 0.6
+        },
+        "R20": {
+          "property": "permeability",
+          "score": 0.5457142857142856,
+          "weight": 0.9
+        },
+        "R21": {
+          "property": "physicochemical",
+          "score": 1.0,
+          "weight": 0.6
+        },
+        "R22": {
+          "property": "target_interaction",
+          "score": 0.4,
+          "weight": 0.9
+        },
+        "R23": {
+          "property": "selectivity",
+          "score": 0.5,
+          "weight": 0.7
+        },
+        "R24": {
+          "property": "stability",
+          "score": 0.8666666666666667,
+          "weight": 0.5
+        }
+      },
+      "descriptors": {
+        "mw": 180.15899999999996,
+        "logp": 1.3101,
+        "hbd": 1,
+        "hba": 3,
+        "tpsa": 63.60000000000001,
+        "rotatable_bonds": 2,
+        "qed": 0.5501217966938848
+      },
+      "valid": true
+    }
+  },
+  "best_candidate_id": "C1",
+  "uncertainty_flags": [],
+  "refinement_deltas": [],
+  "budget_used": 5,
+  "budget_max": 20,
+  "trajectory": [
+    {
+      "iteration": 0,
+      "action": "RUN_AMR_ANALYSIS",
+      "action_args": {},
+      "observation": {
+        "resistance_risk": 0.9999559678959451,
+        "n_mechanism_clusters": 3,
+        "held_out_val_auc": 0.9722949053409266
+      },
+      "rationale": "no_protein_rag ablation: real AMR-MoEGA, ProteinRAG intentionally skipped",
+      "hypothesis_update": null,
+      "confidence": null
+    },
+    {
+      "iteration": 1,
+      "action": "RETRIEVE_PROTEIN_EVIDENCE",
+      "action_args": {},
+      "observation": {
+        "n_records": 3,
+        "n_evidence_gaps": 0,
+        "note": "ProteinRAG intentionally skipped for this ablation"
+      },
+      "rationale": "no_protein_rag ablation: heuristic mechanism mapping only, no real evidence",
+      "hypothesis_update": null,
+      "confidence": null
+    },
+    {
+      "iteration": 2,
+      "action": "BUILD_REQUIREMENTS",
+      "action_args": {},
+      "observation": {
+        "n_requirements": 8,
+        "properties": [
+          "target_interaction",
+          "permeability",
+          "selectivity",
+          "permeability",
+          "physicochemical",
+          "target_interaction",
+          "selectivity",
+          "stability"
+        ]
+      },
+      "rationale": "deterministic: build requirements from evidence",
+      "hypothesis_update": null,
+      "confidence": null
+    },
+    {
+      "iteration": 3,
+      "action": "EVALUATE_CANDIDATE",
+      "action_args": {},
+      "observation": {
+        "candidate_id": "C1",
+        "name": "aspirin",
+        "overall_score": 0.5686060606060607,
+        "valid": true
+      },
+      "rationale": "deterministic: evaluate the seed candidate",
+      "hypothesis_update": null,
+      "confidence": null
+    },
+    {
+      "iteration": 4,
+      "action": "STOP",
+      "action_args": {
+        "reason": "deterministic_sequence_complete"
+      },
+      "observation": {
+        "stopped": true,
+        "reason": "deterministic_sequence_complete"
+      },
+      "rationale": "deterministic: fixed sequence complete",
+      "hypothesis_update": null,
+      "confidence": null
+    }
+  ],
+  "condition": "no_protein_rag",
+  "wall_clock_seconds": 0.023641586303710938
+}

@@ -1,0 +1,377 @@
+{
+  "question": "[static_chemistry] candidate-property refinements for Giessen-dataset genome row 6 (CIP)?",
+  "antibiotic": "CIP",
+  "genome_row": 6,
+  "status": "stopped",
+  "stopping_reason": "static_chemistry_complete",
+  "risk_profile": null,
+  "biological_evidence": {
+    "nodes": [],
+    "edges": [],
+    "evidence": []
+  },
+  "rbt_records": [],
+  "hypotheses": [],
+  "requirements": [
+    {
+      "requirement_id": "R21",
+      "property_name": "target_interaction",
+      "weight": 0.5,
+      "rationale": "static baseline: uniform weight, no evidence used",
+      "evidence_ids": []
+    },
+    {
+      "requirement_id": "R22",
+      "property_name": "selectivity",
+      "weight": 0.5,
+      "rationale": "static baseline: uniform weight, no evidence used",
+      "evidence_ids": []
+    },
+    {
+      "requirement_id": "R23",
+      "property_name": "physicochemical",
+      "weight": 0.5,
+      "rationale": "static baseline: uniform weight, no evidence used",
+      "evidence_ids": []
+    },
+    {
+      "requirement_id": "R24",
+      "property_name": "stability",
+      "weight": 0.5,
+      "rationale": "static baseline: uniform weight, no evidence used",
+      "evidence_ids": []
+    },
+    {
+      "requirement_id": "R25",
+      "property_name": "solubility",
+      "weight": 0.5,
+      "rationale": "static baseline: uniform weight, no evidence used",
+      "evidence_ids": []
+    },
+    {
+      "requirement_id": "R26",
+      "property_name": "permeability",
+      "weight": 0.5,
+      "rationale": "static baseline: uniform weight, no evidence used",
+      "evidence_ids": []
+    },
+    {
+      "requirement_id": "R27",
+      "property_name": "developability",
+      "weight": 0.5,
+      "rationale": "static baseline: uniform weight, no evidence used",
+      "evidence_ids": []
+    },
+    {
+      "requirement_id": "R28",
+      "property_name": "toxicity_filters",
+      "weight": 0.5,
+      "rationale": "static baseline: uniform weight, no evidence used",
+      "evidence_ids": []
+    },
+    {
+      "requirement_id": "R29",
+      "property_name": "diversity",
+      "weight": 0.5,
+      "rationale": "static baseline: uniform weight, no evidence used",
+      "evidence_ids": []
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "C1",
+      "name": "aspirin",
+      "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C2",
+      "name": "ibuprofen",
+      "smiles": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C3",
+      "name": "paracetamol",
+      "smiles": "CC(=O)Nc1ccc(O)cc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C4",
+      "name": "ciprofloxacin",
+      "smiles": "O=C(O)c1cn(C2CC2)c2cc(N3CCNCC3)c(F)cc2c1=O",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C5",
+      "name": "amoxicillin",
+      "smiles": "CC1(C)SC2C(NC(=O)C(N)c3ccc(O)cc3)C(=O)N2C1C(=O)O",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C6",
+      "name": "sulfamethoxazole",
+      "smiles": "Cc1cc(NS(=O)(=O)c2ccc(N)cc2)no1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C7",
+      "name": "trimethoprim",
+      "smiles": "COc1cc(Cc2cnc(N)nc2N)cc(OC)c1OC",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C8",
+      "name": "penicillin_g",
+      "smiles": "CC1(C)SC2C(NC(=O)Cc3ccccc3)C(=O)N2C1C(=O)O",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C9",
+      "name": "tetracycline",
+      "smiles": "CN(C)C1C(=O)C(C(N)=O)=C(O)C2(O)C(O)=C3C(=O)c4c(O)ccc(N)c4CC3CC12",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C10",
+      "name": "metronidazole",
+      "smiles": "Cc1ncc([N+](=O)[O-])n1CCO",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C11",
+      "name": "doxycycline",
+      "smiles": "CC1c2cccc(O)c2C(O)=C2C(=O)C3(O)C(O)=C(C(N)=O)C(=O)C(N(C)C)C3C(O)C21",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C12",
+      "name": "caffeine",
+      "smiles": "Cn1c(=O)c2c(ncn2C)n(C)c1=O",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C13",
+      "name": "nicotine",
+      "smiles": "CN1CCCC1c1cccnc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C14",
+      "name": "benzocaine",
+      "smiles": "CCOC(=O)c1ccc(N)cc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C15",
+      "name": "sulfanilamide",
+      "smiles": "Nc1ccc(S(N)(=O)=O)cc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C16",
+      "name": "chloramphenicol",
+      "smiles": "O=C(NC(CO)C(O)c1ccc([N+](=O)[O-])cc1)C(Cl)Cl",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C17",
+      "name": "levofloxacin",
+      "smiles": "CC1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C18",
+      "name": "norfloxacin",
+      "smiles": "CCn1cc(C(=O)O)c(=O)c2cc(F)c(N3CCNCC3)cc21",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C19",
+      "name": "ampicillin",
+      "smiles": "CC1(C)SC2C(NC(=O)C(N)c3ccccc3)C(=O)N2C1C(=O)O",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C20",
+      "name": "cephalexin",
+      "smiles": "CC1=C(C(=O)O)N2C(=O)C(NC(=O)C(N)c3ccccc3)C2SC1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C21",
+      "name": "salicylic_acid",
+      "smiles": "O=C(O)c1ccccc1O",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C22",
+      "name": "benzoic_acid",
+      "smiles": "O=C(O)c1ccccc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C23",
+      "name": "phenol",
+      "smiles": "Oc1ccccc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C24",
+      "name": "acetanilide",
+      "smiles": "CC(=O)Nc1ccccc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C25",
+      "name": "sulfadiazine",
+      "smiles": "Nc1ccc(S(=O)(=O)Nc2ncccn2)cc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C26",
+      "name": "sulfacetamide",
+      "smiles": "CC(=O)NS(=O)(=O)c1ccc(N)cc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C27",
+      "name": "pyrimethamine",
+      "smiles": "CCc1nc(N)nc(N)c1Cl",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C28",
+      "name": "dapsone",
+      "smiles": "Nc1ccc(S(=O)(=O)c2ccc(N)cc2)cc1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C29",
+      "name": "nitrofurantoin",
+      "smiles": "NCN1C(=O)NC(=O)C1=Nn1ccc([N+](=O)[O-])c1",
+      "parent_id": null,
+      "transform_applied": null
+    },
+    {
+      "candidate_id": "C30",
+      "name": "isoniazid",
+      "smiles": "NNC(=O)c1ccncc1",
+      "parent_id": null,
+      "transform_applied": null
+    }
+  ],
+  "evaluations": {
+    "C1": {
+      "overall_score": 0.5872197498972042,
+      "per_requirement": {
+        "R21": {
+          "property": "target_interaction",
+          "score": 0.4,
+          "weight": 0.5
+        },
+        "R22": {
+          "property": "selectivity",
+          "score": 0.5,
+          "weight": 0.5
+        },
+        "R23": {
+          "property": "physicochemical",
+          "score": 1.0,
+          "weight": 0.5
+        },
+        "R24": {
+          "property": "stability",
+          "score": 0.8666666666666667,
+          "weight": 0.5
+        },
+        "R25": {
+          "property": "solubility",
+          "score": 0.9224749999999999,
+          "weight": 0.5
+        },
+        "R26": {
+          "property": "permeability",
+          "score": 0.5457142857142856,
+          "weight": 0.5
+        },
+        "R27": {
+          "property": "developability",
+          "score": 0.5501217966938848,
+          "weight": 0.5
+        },
+        "R28": {
+          "property": "toxicity_filters",
+          "score": 0.0,
+          "weight": 0.5
+        },
+        "R29": {
+          "property": "diversity",
+          "score": 0.5,
+          "weight": 0.5
+        }
+      },
+      "descriptors": {
+        "mw": 180.15899999999996,
+        "logp": 1.3101,
+        "hbd": 1,
+        "hba": 3,
+        "tpsa": 63.60000000000001,
+        "rotatable_bonds": 2,
+        "qed": 0.5501217966938848
+      },
+      "valid": true
+    }
+  },
+  "best_candidate_id": "C1",
+  "uncertainty_flags": [],
+  "refinement_deltas": [],
+  "budget_used": 1,
+  "budget_max": 20,
+  "trajectory": [
+    {
+      "iteration": 0,
+      "action": "EVALUATE_CANDIDATE",
+      "action_args": {},
+      "observation": {
+        "candidate_id": "C1",
+        "name": "aspirin",
+        "overall_score": 0.5872197498972042,
+        "valid": true
+      },
+      "rationale": "static baseline: uniform requirements, no evidence",
+      "hypothesis_update": null,
+      "confidence": null
+    }
+  ],
+  "condition": "static_chemistry",
+  "wall_clock_seconds": 0.06578874588012695
+}

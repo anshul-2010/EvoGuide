@@ -1,0 +1,163 @@
+{
+  "antibiotic": "CIP",
+  "genome_row": 1,
+  "true_label": 1,
+  "resistance_risk": 0.9999996190765432,
+  "held_out_val_auc": 0.9652147144836078,
+  "best_generation": 3,
+  "population_fitness_trajectory": [
+    {
+      "generation": 0,
+      "mean_auc": 0.9452247191011236,
+      "best_auc": 0.9609050330921964,
+      "std_auc": 0.007001126506673787
+    },
+    {
+      "generation": 1,
+      "mean_auc": 0.9510799856343953,
+      "best_auc": 0.9624442050177004,
+      "std_auc": 0.006696380672219068
+    },
+    {
+      "generation": 2,
+      "mean_auc": 0.9545623621158484,
+      "best_auc": 0.9622133292288748,
+      "std_auc": 0.005986341567330009
+    },
+    {
+      "generation": 3,
+      "mean_auc": 0.9600649017495253,
+      "best_auc": 0.9652147144836078,
+      "std_auc": 0.0034761466640472506
+    },
+    {
+      "generation": 4,
+      "mean_auc": 0.9592504232722795,
+      "best_auc": 0.9609819916884716,
+      "std_auc": 0.0016438363370243063
+    },
+    {
+      "generation": 5,
+      "mean_auc": 0.9604240418654763,
+      "best_auc": 0.9639833769432046,
+      "std_auc": 0.002722370685248185
+    },
+    {
+      "generation": 6,
+      "mean_auc": 0.9600456621004566,
+      "best_auc": 0.9624442050177006,
+      "std_auc": 0.0020273474314569076
+    },
+    {
+      "generation": 7,
+      "mean_auc": 0.9597506541480684,
+      "best_auc": 0.9629829151916269,
+      "std_auc": 0.001643986452209954
+    }
+  ],
+  "entropy_trajectory": [
+    {
+      "generation": 0,
+      "mean_feature_entropy_bits": 0.6356122756745944
+    },
+    {
+      "generation": 1,
+      "mean_feature_entropy_bits": 0.6046395611656653
+    },
+    {
+      "generation": 2,
+      "mean_feature_entropy_bits": 0.5192343549473698
+    },
+    {
+      "generation": 3,
+      "mean_feature_entropy_bits": 0.2581417024477443
+    },
+    {
+      "generation": 4,
+      "mean_feature_entropy_bits": 0.2091860517690188
+    },
+    {
+      "generation": 5,
+      "mean_feature_entropy_bits": 0.14006294626699728
+    },
+    {
+      "generation": 6,
+      "mean_feature_entropy_bits": 0.13315124545319637
+    },
+    {
+      "generation": 7,
+      "mean_feature_entropy_bits": 0.18655866184381079
+    }
+  ],
+  "mechanism_clusters": [
+    {
+      "cluster_id": 0,
+      "first_appearance_generation": 0,
+      "n_members": 69,
+      "representative_features": [
+        "X551011.3",
+        "X2122650.3",
+        "X2591849.3",
+        "X4598824.2",
+        "X3183014",
+        "X1749908.2",
+        "X3475285.2",
+        "X4422821.2",
+        "X2030036.1",
+        "X2133329.2"
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "first_appearance_generation": 0,
+      "n_members": 7,
+      "representative_features": [
+        "X497732.3",
+        "X3986701.2",
+        "X3183014",
+        "X2793868.2",
+        "X3032179",
+        "X669854.1",
+        "X2591849.3",
+        "X2957424",
+        "X4114164.2",
+        "X2281948"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "first_appearance_generation": 0,
+      "n_members": 20,
+      "representative_features": [
+        "X3475285.2",
+        "X3608568.1",
+        "X2125800.3",
+        "X4441487.1",
+        "X4627668.2",
+        "X617060.2",
+        "X1984821.3",
+        "X2093324",
+        "X4368957.3",
+        "X4627668"
+      ]
+    }
+  ],
+  "cluster_transition_matrix": [
+    [
+      0.9763779527559056,
+      0.015748031496062992,
+      0.007874015748031496
+    ],
+    [
+      0.2727272727272727,
+      0.45454545454545453,
+      0.2727272727272727
+    ],
+    [
+      0.05,
+      0.15,
+      0.8
+    ]
+  ],
+  "notes": "mechanism_clusters are feature-column clusters (X### SNP codes) from the Giessen tabular dataset, NOT gene-symbol clusters \u2014 this dataset has no gene annotation. cluster_transition_matrix is a GA-generation-indexed transition likelihood between these clusters, not a real-time/calendar prediction."
+}

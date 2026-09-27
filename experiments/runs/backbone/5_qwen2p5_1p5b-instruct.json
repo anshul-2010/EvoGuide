@@ -1,0 +1,385 @@
+{
+  "question": "[full_agent] candidate-property refinements for Giessen-dataset genome row 5 (CIP)?",
+  "antibiotic": "CIP",
+  "genome_row": 5,
+  "status": "human_review",
+  "stopping_reason": "agent_requested_human_review",
+  "risk_profile": {
+    "antibiotic": "CIP",
+    "genome_row": 5,
+    "true_label": 1,
+    "resistance_risk": 0.9999559678959451,
+    "held_out_val_auc": 0.9722949053409266,
+    "best_generation": 24,
+    "population_fitness_trajectory": [
+      {
+        "generation": 0,
+        "mean_auc": 0.9451962444205018,
+        "best_auc": 0.9628289979990764,
+        "std_auc": 0.008451170187554976
+      },
+      {
+        "generation": 1,
+        "mean_auc": 0.9506233646298292,
+        "best_auc": 0.9633677081730029,
+        "std_auc": 0.005350764672321715
+      },
+      {
+        "generation": 2,
+        "mean_auc": 0.9535293212251809,
+        "best_auc": 0.9629059565953516,
+        "std_auc": 0.004460528737946356
+      },
+      {
+        "generation": 3,
+        "mean_auc": 0.9566122825919655,
+        "best_auc": 0.9640603355394798,
+        "std_auc": 0.0040680546933565195
+      },
+      {
+        "generation": 4,
+        "mean_auc": 0.9569478220717254,
+        "best_auc": 0.9644451285208558,
+        "std_auc": 0.003820530122757082
+      },
+      {
+        "generation": 5,
+        "mean_auc": 0.9589718331537632,
+        "best_auc": 0.96598430044636,
+        "std_auc": 0.004063578291551336
+      },
+      {
+        "generation": 6,
+        "mean_auc": 0.9589487455748809,
+        "best_auc": 0.966753886409112,
+        "std_auc": 0.0040420802865492765
+      },
+      {
+        "generation": 7,
+        "mean_auc": 0.9595213175311682,
+        "best_auc": 0.965214714483608,
+        "std_auc": 0.002562177634887339
+      },
+      {
+        "generation": 8,
+        "mean_auc": 0.959385870401724,
+        "best_auc": 0.965291673079883,
+        "std_auc": 0.003248995066425467
+      },
+      {
+        "generation": 9,
+        "mean_auc": 0.9610604894566722,
+        "best_auc": 0.9672925965830383,
+        "std_auc": 0.002979420622165754
+      },
+      {
+        "generation": 10,
+        "mean_auc": 0.9613375404032631,
+        "best_auc": 0.9680621825457902,
+        "std_auc": 0.0034610802300677713
+      },
+      {
+        "generation": 11,
+        "mean_auc": 0.9623472371863937,
+        "best_auc": 0.9672925965830383,
+        "std_auc": 0.002748911505096187
+      },
+      {
+        "generation": 12,
+        "mean_auc": 0.9626519932276433,
+        "best_auc": 0.9691396028936432,
+        "std_auc": 0.002839605349748054
+      },
+      {
+        "generation": 13,
+        "mean_auc": 0.963218408496229,
+        "best_auc": 0.9689856857010928,
+        "std_auc": 0.00316281704643446
+      },
+      {
+        "generation": 14,
+        "mean_auc": 0.9640726489148839,
+        "best_auc": 0.9691396028936432,
+        "std_auc": 0.00273034349511429
+      },
+      {
+        "generation": 15,
+        "mean_auc": 0.9637278744035709,
+        "best_auc": 0.9685239341234415,
+        "std_auc": 0.0024474982553666473
+      },
+      {
+        "generation": 16,
+        "mean_auc": 0.9635893489302755,
+        "best_auc": 0.9696013544712945,
+        "std_auc": 0.002439703543987525
+      },
+      {
+        "generation": 17,
+        "mean_auc": 0.9641803909496691,
+        "best_auc": 0.9692935200861936,
+        "std_auc": 0.0025687649702049896
+      },
+      {
+        "generation": 18,
+        "mean_auc": 0.9639987686624595,
+        "best_auc": 0.9704478990303218,
+        "std_auc": 0.0030831500113914223
+      },
+      {
+        "generation": 19,
+        "mean_auc": 0.9647267969832231,
+        "best_auc": 0.9700631060489456,
+        "std_auc": 0.0030767122811814836
+      },
+      {
+        "generation": 20,
+        "mean_auc": 0.9644312759735262,
+        "best_auc": 0.9696013544712945,
+        "std_auc": 0.002703501486341088
+      },
+      {
+        "generation": 21,
+        "mean_auc": 0.9656718485454826,
+        "best_auc": 0.9713714021856241,
+        "std_auc": 0.002932977219707024
+      },
+      {
+        "generation": 22,
+        "mean_auc": 0.965322456518393,
+        "best_auc": 0.9706018162228721,
+        "std_auc": 0.0026967153073420803
+      },
+      {
+        "generation": 23,
+        "mean_auc": 0.9655887332615053,
+        "best_auc": 0.9719870709558258,
+        "std_auc": 0.002978288130582845
+      },
+      {
+        "generation": 24,
+        "mean_auc": 0.965614899184239,
+        "best_auc": 0.9722949053409266,
+        "std_auc": 0.002765845269230531
+      }
+    ],
+    "entropy_trajectory": [
+      {
+        "generation": 0,
+        "mean_feature_entropy_bits": 0.7071646588131286
+      },
+      {
+        "generation": 1,
+        "mean_feature_entropy_bits": 0.7149658627457286
+      },
+      {
+        "generation": 2,
+        "mean_feature_entropy_bits": 0.7151136216263695
+      },
+      {
+        "generation": 3,
+        "mean_feature_entropy_bits": 0.621890327224412
+      },
+      {
+        "generation": 4,
+        "mean_feature_entropy_bits": 0.62478369801339
+      },
+      {
+        "generation": 5,
+        "mean_feature_entropy_bits": 0.6000676461523761
+      },
+      {
+        "generation": 6,
+        "mean_feature_entropy_bits": 0.5716616909742144
+      },
+      {
+        "generation": 7,
+        "mean_feature_entropy_bits": 0.5737071792055924
+      },
+      {
+        "generation": 8,
+        "mean_feature_entropy_bits": 0.569535617632201
+      },
+      {
+        "generation": 9,
+        "mean_feature_entropy_bits": 0.549909049025351
+      },
+      {
+        "generation": 10,
+        "mean_feature_entropy_bits": 0.5397031826433369
+      },
+      {
+        "generation": 11,
+        "mean_feature_entropy_bits": 0.5339594161954476
+      },
+      {
+        "generation": 12,
+        "mean_feature_entropy_bits": 0.5402364811080785
+      },
+      {
+        "generation": 13,
+        "mean_feature_entropy_bits": 0.5767752943015335
+      },
+      {
+        "generation": 14,
+        "mean_feature_entropy_bits": 0.5812943869122758
+      },
+      {
+        "generation": 15,
+        "mean_feature_entropy_bits": 0.5800974576170387
+      },
+      {
+        "generation": 16,
+        "mean_feature_entropy_bits": 0.5947406267241575
+      },
+      {
+        "generation": 17,
+        "mean_feature_entropy_bits": 0.6070868658574153
+      },
+      {
+        "generation": 18,
+        "mean_feature_entropy_bits": 0.6058999199464652
+      },
+      {
+        "generation": 19,
+        "mean_feature_entropy_bits": 0.5910654466220042
+      },
+      {
+        "generation": 20,
+        "mean_feature_entropy_bits": 0.6100529708183585
+      },
+      {
+        "generation": 21,
+        "mean_feature_entropy_bits": 0.603412704298311
+      },
+      {
+        "generation": 22,
+        "mean_feature_entropy_bits": 0.6005517810999117
+      },
+      {
+        "generation": 23,
+        "mean_feature_entropy_bits": 0.5951157063605165
+      },
+      {
+        "generation": 24,
+        "mean_feature_entropy_bits": 0.6004719887264671
+      }
+    ],
+    "mechanism_clusters": [
+      {
+        "cluster_id": 0,
+        "first_appearance_generation": 0,
+        "n_members": 316,
+        "representative_features": [
+          "X2125486.2",
+          "X1278140.2",
+          "X3436868.2",
+          "X3183014",
+          "X1984821.1",
+          "X2122650.2",
+          "X4272090.1",
+          "X3475285.2",
+          "X2008324.2",
+          "X2133329.2"
+        ]
+      },
+      {
+        "cluster_id": 1,
+        "first_appearance_generation": 6,
+        "n_members": 695,
+        "representative_features": [
+          "X2313262.2",
+          "X2125528",
+          "X3576303",
+          "X3436868.2",
+          "X2565934.2",
+          "X3183014",
+          "X1749908",
+          "X3181155.2",
+          "X165917",
+          "X2122650.2"
+        ]
+      },
+      {
+        "cluster_id": 2,
+        "first_appearance_generation": 0,
+        "n_members": 239,
+        "representative_features": [
+          "X4488025.1",
+          "X4477553",
+          "X2121686.2",
+          "X4368957.3",
+          "X411555.3",
+          "X4114164.2",
+          "X2313262.2",
+          "X140680.3",
+          "X3183014",
+          "X2119310.2"
+        ]
+      }
+    ],
+    "cluster_transition_matrix": [
+      [
+        0.7186009538950715,
+        0.17965023847376788,
+        0.10174880763116058
+      ],
+      [
+        0.07293946024799416,
+        0.9212253829321663,
+        0.005835156819839533
+      ],
+      [
+        0.1836734693877551,
+        0.03571428571428571,
+        0.7806122448979592
+      ]
+    ],
+    "notes": "mechanism_clusters are feature-column clusters (X### SNP codes) from the Giessen tabular dataset, NOT gene-symbol clusters \u2014 this dataset has no gene annotation. cluster_transition_matrix is a GA-generation-indexed transition likelihood between these clusters, not a real-time/calendar prediction."
+  },
+  "biological_evidence": {
+    "nodes": [],
+    "edges": [],
+    "evidence": []
+  },
+  "rbt_records": [],
+  "hypotheses": [],
+  "requirements": [],
+  "candidates": [],
+  "evaluations": {},
+  "best_candidate_id": null,
+  "uncertainty_flags": [],
+  "refinement_deltas": [],
+  "budget_used": 2,
+  "budget_max": 20,
+  "trajectory": [
+    {
+      "iteration": 0,
+      "action": "RUN_AMR_ANALYSIS",
+      "action_args": {},
+      "observation": {
+        "resistance_risk": 0.9999559678959451,
+        "n_mechanism_clusters": 3,
+        "held_out_val_auc": 0.9722949053409266
+      },
+      "rationale": "Start with an AMR analysis to find ERP for the genome.",
+      "hypothesis_update": null,
+      "confidence": null
+    },
+    {
+      "iteration": 1,
+      "action": "HUMAN_REVIEW",
+      "action_args": {},
+      "observation": {
+        "flag": "human_review_requested",
+        "reason": "agent_requested_human_review"
+      },
+      "rationale": "No biological evidence yet, should ask a biologist to provide additional protein evidence.",
+      "hypothesis_update": null,
+      "confidence": null
+    }
+  ],
+  "condition": "full_agent",
+  "model": "qwen2.5:1.5b-instruct",
+  "wall_clock_seconds": 23.387669324874878
+}
