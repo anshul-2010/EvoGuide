@@ -1,0 +1,25 @@
+acrR:
+  accession: P0ACS9
+  header: '>sp|P0ACS9|ACRR_ECOLI HTH-type transcriptional regulator AcrR OS=Escherichia
+    coli (strain K12) OX=83333 GN=acrR PE=1 SV=1'
+  source: UniProt REST
+marA:
+  accession: P0ACH5
+  header: '>sp|P0ACH5|MARA_ECOLI Multiple antibiotic resistance protein MarA OS=Escherichia
+    coli (strain K12) OX=83333 GN=marA PE=1 SV=2'
+  source: UniProt REST
+soxS:
+  accession: P0A9E2
+  header: '>sp|P0A9E2|SOXS_ECOLI Regulatory protein SoxS OS=Escherichia coli (strain
+    K12) OX=83333 GN=soxS PE=1 SV=2'
+  source: UniProt REST
+ompF:
+  accession: P02931
+  header: '>sp|P02931|OMPF_ECOLI Outer membrane porin F OS=Escherichia coli (strain
+    K12) OX=83333 GN=ompF PE=1 SV=1'
+  source: UniProt REST
+ompC:
+  accession: P06996
+  header: '>sp|P06996|OMPC_ECOLI Outer membrane porin C OS=Escherichia coli (strain
+    K12) OX=83333 GN=ompC PE=1 SV=1'
+  source: UniProt REST

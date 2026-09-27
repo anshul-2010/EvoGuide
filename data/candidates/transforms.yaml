@@ -1,0 +1,19 @@
+transforms:
+  - name: aromatic_hydroxylation
+    smarts: "[cH:1]>>[c:1]O"
+    rationale: "increases polarity/H-bonding, may improve solubility at the cost of permeability"
+  - name: aromatic_fluorination
+    smarts: "[cH:1]>>[c:1]F"
+    rationale: "common bioisosteric halogenation, modest lipophilicity/metabolic-stability change"
+  - name: aromatic_methylation
+    smarts: "[cH:1]>>[c:1]C"
+    rationale: "increases lipophilicity, may reduce polarity/solubility"
+  - name: carboxylic_to_amide
+    smarts: "[C:1](=O)[OH:2]>>[C:1](=O)N"
+    rationale: "classic carboxylic-acid-to-amide bioisostere, changes ionization/permeability"
+  - name: amine_n_methylation
+    smarts: "[NH2:1]>>[NH:1]C"
+    rationale: "N-methylation, modest lipophilicity increase, reduces H-bond donor count"
+  - name: dehalogenation
+    smarts: "[c:1][F,Cl,Br,I]>>[cH:1]"
+    rationale: "removes a halogen substituent, reduces lipophilicity/molecular weight"
