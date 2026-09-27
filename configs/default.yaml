@@ -1,0 +1,104 @@
+# EvoDesign-Agent — default configuration (fast local demo scale)
+# See docs/overview.md and docs/design-principles.md for what each field is allowed to mean.
+
+external:
+  # Paths to the two existing repos this project wraps as tools. Never copied/forked into this repo.
+  amr_moega_path: "C:/Users/Dell/Desktop/Studies/Active_Research/AMR-MoEGA"
+  protein_rag_path: "C:/Users/Dell/Desktop/Studies/Active_Research/Evolution-Aware-Hybrid-Protein-Retrieval"
+
+amr:
+  antibiotic: "CIP"                     # one of CIP, CTX, CTZ, GEN (configurable per docs/design-principles.md)
+  giessen_features_csv: "data/Giessen_dataset/cip_ctx_ctz_gen_multi_data.csv"
+  giessen_pheno_csv: "data/Giessen_dataset/cip_ctx_ctz_gen_pheno.csv"
+  prepared_dir: "data/amr"
+  # The raw Giessen feature matrix has 60,936 SNP-code columns vs. 809 samples — a
+  # per-chromosome GA that retrains 3 experts on the full space is impractical (~2 min to
+  # even read the CSV, and full-width RF/XGB/LGBM fits per chromosome would dominate runtime).
+  # Pre-filter to the top-K columns by univariate F-test association with the label before the
+  # GA ever sees them. This is a disclosed pragmatic step, not something moega_pipeline does
+  # itself, and uses the full available cohort (mild, documented leakage into feature
+  # SELECTION only — not into the GA's own held-out validation AUC or the held-out target
+  # genome's prediction, both of which still use a proper train/val/target split downstream).
+  max_features: 500
+  # Every baseline/ablation condition for a genome reuses the same expensive GA result — see
+  # tools/amr_result_cache.py. Keyed by (antibiotic, genome_row, GA config), so changing any
+  # GA hyperparameter below invalidates the cache for future runs (by design: a different GA
+  # config is a different, uncached result).
+  cache_dir: "experiments/amr_cache"
+  ga:
+    population: 50                      # real-scale (validated at fast-demo pop=12/gens=8 first)
+    generations: 25
+    elitism: 2
+    tournament_k: 3
+    mut_rate_mask: 0.02
+    mut_rate_param: 0.1
+    n_jobs: -1                          # joblib.Parallel over per-chromosome evaluation; -1 = all cores
+    test_size: 0.2
+    random_state: 0
+  telemetry:
+    n_clusters: 3                       # KMeans clusters over feature_mask "genotype" per generation
+
+protein_rag:
+  corpus_parquet: "data/splits/train.parquet"   # relative to protein_rag_path
+  subset_size: 18000                     # real-scale (validated at fast-demo 3000 first)
+  subset_seed: 0
+  dense_model: "esm2_t12_35M_UR50D"      # real-scale (validated at fast-demo esm2_t6_8M first; paper/config default is 650M)
+  index_dir: "data/protein_rag/index"    # relative to this repo (EvoDesign Agent/)
+  sparse:
+    k1: 1.5
+    b: 0.75
+    motif_boost: 3.0
+    domain_boost: 5.0
+    top_k: 200
+  dense:
+    top_k: 200
+  fusion:
+    method: "linear"
+    alpha: 0.5
+  multivec:
+    top_k: 50
+  rerank:
+    top_k_final: 20
+  mem:
+    # MUMmer has no native Windows build here — use the pure-Python approximation instead (see tools/mem_features_pure.py)
+    backend: "pure_python"
+    min_mem_len: 5
+
+gene_fixtures:
+  # Small, hand-verified set of real AMR-relevant genes named in the AMR-MoEGA paper's case study.
+  # Accessions are NEVER hardcoded here — prepare_gene_fixtures.py resolves each gene name to a
+  # reviewed (Swiss-Prot) UniProt accession live via UniProt's search API, so the actual sequence
+  # is always fetched from source rather than trusted from a possibly-misremembered ID.
+  fasta_path: "data/amr/gene_query_fixtures.fasta"
+  mapping_path: "data/amr/gene_fixture_mapping.yaml"
+  organism_taxid: 83333    # Escherichia coli K-12
+  genes:
+    - acrR      # efflux-regulator mechanism cluster
+    - marA      # efflux-regulator mechanism cluster
+    - soxS      # efflux-regulator mechanism cluster
+    - ompF      # porin/permeability mechanism cluster
+    - ompC      # porin/permeability mechanism cluster
+    - blaTEM    # beta-lactamase acquisition mechanism cluster
+    - blaCTX-M  # beta-lactamase acquisition mechanism cluster
+
+candidates:
+  seed_pool_csv: "data/candidates/seed_pool.csv"
+  transform_library: "data/candidates/transforms.yaml"
+
+agent:
+  llm_backend: "ollama"
+  ollama:
+    host: "http://localhost:11434"
+    model: "qwen2.5:3b-instruct"  # the 1.5b model was tried first (faster download on a slow
+    # connection) but failed a real end-to-end validation run: across 20 steps it never once
+    # called RETRIEVE_PROTEIN_EVIDENCE despite its own stated rationale repeatedly saying it
+    # was needed — a genuine sequencing/reasoning failure, not a prompt bug. 3b restores the
+    # originally-planned capability level.
+    temperature: 0.2
+    timeout_s: 120
+  budget_max_steps: 20
+  convergence_epsilon: 0.01
+  risk_threshold_for_retrieval: 0.5      # ERP clusters/mechanisms above this trigger RBT->ProteinRAG queries
+
+run:
+  output_dir: "experiments/runs"
